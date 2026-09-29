@@ -1,0 +1,24 @@
+{
+  "dataset": "bike_sharing",
+  "feature_set": "minimal",
+  "feature_rows": 17303,
+  "numeric_feature_count": 4,
+  "categorical_feature_count": 7,
+  "numeric_features": [
+    "weather_temp",
+    "weather_atemp",
+    "weather_hum",
+    "weather_windspeed"
+  ],
+  "categorical_features": [
+    "cal_hour",
+    "cal_weekday",
+    "cal_month",
+    "cal_year",
+    "cal_is_weekend",
+    "cal_holiday",
+    "weather_weathersit"
+  ],
+  "forecast_examples_start": "2011-01-01T01:00:00",
+  "forecast_examples_end": "2012-12-31T23:00:00"
+}

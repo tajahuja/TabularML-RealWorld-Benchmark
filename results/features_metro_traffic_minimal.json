@@ -1,0 +1,24 @@
+{
+  "dataset": "metro_traffic",
+  "feature_set": "minimal",
+  "feature_rows": 37986,
+  "numeric_feature_count": 4,
+  "categorical_feature_count": 7,
+  "numeric_features": [
+    "weather_temp",
+    "weather_rain_1h",
+    "weather_snow_1h",
+    "weather_clouds_all"
+  ],
+  "categorical_features": [
+    "cal_hour",
+    "cal_weekday",
+    "cal_month",
+    "cal_year",
+    "cal_is_weekend",
+    "cal_holiday",
+    "weather_weather_main"
+  ],
+  "forecast_examples_start": "2012-10-02T10:00:00",
+  "forecast_examples_end": "2018-09-30T23:00:00"
+}

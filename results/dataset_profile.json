@@ -1,0 +1,157 @@
+[
+  {
+    "dataset": "bike_sharing",
+    "source_rows": 17379,
+    "source_columns": 17,
+    "columns": [
+      "instant",
+      "dteday",
+      "season",
+      "yr",
+      "mnth",
+      "hr",
+      "holiday",
+      "weekday",
+      "workingday",
+      "weathersit",
+      "temp",
+      "atemp",
+      "hum",
+      "windspeed",
+      "casual",
+      "registered",
+      "cnt"
+    ],
+    "target": "cnt",
+    "task": "regression",
+    "numerical_features": [
+      "temp",
+      "atemp",
+      "hum",
+      "windspeed"
+    ],
+    "categorical_features": [
+      "season",
+      "holiday",
+      "weekday",
+      "workingday",
+      "weathersit"
+    ],
+    "missing_values_by_column": {
+      "instant": 0,
+      "dteday": 0,
+      "season": 0,
+      "yr": 0,
+      "mnth": 0,
+      "hr": 0,
+      "holiday": 0,
+      "weekday": 0,
+      "workingday": 0,
+      "weathersit": 0,
+      "temp": 0,
+      "atemp": 0,
+      "hum": 0,
+      "windspeed": 0,
+      "casual": 0,
+      "registered": 0,
+      "cnt": 0
+    },
+    "cardinality_by_categorical_feature": {
+      "season": 4,
+      "holiday": 2,
+      "weekday": 7,
+      "workingday": 2,
+      "weathersit": 4
+    },
+    "duplicate_rows": 0,
+    "rows_with_repeated_timestamp": 0,
+    "unique_timestamps": 17379,
+    "temporal_start": "2011-01-01T00:00:00",
+    "temporal_end": "2012-12-31T23:00:00",
+    "median_observation_gap_hours": 1.0,
+    "target_distribution": {
+      "count": 17379,
+      "mean": 189.46308763450142,
+      "std": 181.38759909186476,
+      "min": 1.0,
+      "q25": 40.0,
+      "median": 142.0,
+      "q75": 281.0,
+      "max": 977.0
+    },
+    "leakage_or_exclusion_notes": [
+      "instant is an ordered row identifier and is excluded.",
+      "casual and registered sum exactly to cnt; both target components are excluded.",
+      "Current-hour weather is not used; predictors use the preceding observed hour."
+    ],
+    "normalized_unique_timestamp_rows": 17379
+  },
+  {
+    "dataset": "metro_traffic",
+    "source_rows": 48204,
+    "source_columns": 9,
+    "columns": [
+      "holiday",
+      "temp",
+      "rain_1h",
+      "snow_1h",
+      "clouds_all",
+      "weather_main",
+      "weather_description",
+      "date_time",
+      "traffic_volume"
+    ],
+    "target": "traffic_volume",
+    "task": "regression",
+    "numerical_features": [
+      "temp",
+      "rain_1h",
+      "snow_1h",
+      "clouds_all"
+    ],
+    "categorical_features": [
+      "holiday",
+      "weather_main",
+      "weather_description"
+    ],
+    "missing_values_by_column": {
+      "holiday": 48143,
+      "temp": 0,
+      "rain_1h": 0,
+      "snow_1h": 0,
+      "clouds_all": 0,
+      "weather_main": 0,
+      "weather_description": 0,
+      "date_time": 0,
+      "traffic_volume": 0
+    },
+    "cardinality_by_categorical_feature": {
+      "holiday": 11,
+      "weather_main": 11,
+      "weather_description": 38
+    },
+    "duplicate_rows": 17,
+    "rows_with_repeated_timestamp": 13074,
+    "unique_timestamps": 40575,
+    "temporal_start": "2012-10-02T09:00:00",
+    "temporal_end": "2018-09-30T23:00:00",
+    "median_observation_gap_hours": 1.0,
+    "target_distribution": {
+      "count": 48204,
+      "mean": 3259.8183553232097,
+      "std": 1986.8606704463589,
+      "min": 0.0,
+      "q25": 1193.0,
+      "median": 3380.0,
+      "q75": 4933.0,
+      "max": 7280.0
+    },
+    "leakage_or_exclusion_notes": [
+      "Repeated timestamps are grouped; the traffic target is constant within each timestamp.",
+      "weather_description is omitted because it duplicates weather_main at higher cardinality.",
+      "Current-hour weather is not used; predictors use the preceding observed hour.",
+      "Blank holiday values are retained as a distinct category after parsing."
+    ],
+    "normalized_unique_timestamp_rows": 40575
+  }
+]

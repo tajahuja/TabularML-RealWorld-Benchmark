@@ -1,0 +1,61 @@
+dataset,feature_set,model,metric,degradation,relative_degradation_pct,interpretation
+bike_sharing,engineered,dummy_mean,mae,25.60642582006392,17.953272136185515,positive values mean temporal error increased
+bike_sharing,engineered,dummy_mean,rmse,45.23212700353599,24.922487523189837,positive values mean temporal error increased
+bike_sharing,engineered,dummy_mean,r2,0.11982750277622722,,positive values mean temporal R-squared decreased; delta is in score points
+bike_sharing,engineered,hist_gradient_boosting,mae,10.99525036735967,47.898490050693376,positive values mean temporal error increased
+bike_sharing,engineered,hist_gradient_boosting,rmse,19.951006121626243,57.02145864377145,positive values mean temporal error increased
+bike_sharing,engineered,hist_gradient_boosting,r2,0.028600213172232603,,positive values mean temporal R-squared decreased; delta is in score points
+bike_sharing,engineered,mlp,mae,10.774678404571485,53.96997674393791,positive values mean temporal error increased
+bike_sharing,engineered,mlp,rmse,13.346577603534438,42.682057523699115,positive values mean temporal error increased
+bike_sharing,engineered,mlp,r2,0.01368587966193724,,positive values mean temporal R-squared decreased; delta is in score points
+bike_sharing,engineered,random_forest,mae,13.650022382063415,61.39865075528541,positive values mean temporal error increased
+bike_sharing,engineered,random_forest,rmse,23.952027620235825,65.86498027779517,positive values mean temporal error increased
+bike_sharing,engineered,random_forest,r2,0.03910682518263542,,positive values mean temporal R-squared decreased; delta is in score points
+bike_sharing,engineered,ridge,mae,10.181121776623371,27.116397097323585,positive values mean temporal error increased
+bike_sharing,engineered,ridge,rmse,15.968423971382983,29.133933352443293,positive values mean temporal error increased
+bike_sharing,engineered,ridge,r2,0.017874312999030306,,positive values mean temporal R-squared decreased; delta is in score points
+bike_sharing,minimal,dummy_mean,mae,25.60642582006392,17.953272136185515,positive values mean temporal error increased
+bike_sharing,minimal,dummy_mean,rmse,45.23212700353599,24.922487523189837,positive values mean temporal error increased
+bike_sharing,minimal,dummy_mean,r2,0.11982750277622722,,positive values mean temporal R-squared decreased; delta is in score points
+bike_sharing,minimal,hist_gradient_boosting,mae,24.409814276547003,59.844019951262744,positive values mean temporal error increased
+bike_sharing,minimal,hist_gradient_boosting,rmse,32.867071719919565,55.93016373970838,positive values mean temporal error increased
+bike_sharing,minimal,hist_gradient_boosting,r2,0.07807817113226989,,positive values mean temporal R-squared decreased; delta is in score points
+bike_sharing,minimal,mlp,mae,21.778496237314794,78.99793170694062,positive values mean temporal error increased
+bike_sharing,minimal,mlp,rmse,30.937788103092437,71.14839340254261,positive values mean temporal error increased
+bike_sharing,minimal,mlp,r2,0.06322341790700503,,positive values mean temporal R-squared decreased; delta is in score points
+bike_sharing,minimal,random_forest,mae,29.37403254449883,81.02939660637772,positive values mean temporal error increased
+bike_sharing,minimal,random_forest,rmse,37.61875187721525,65.56790881067361,positive values mean temporal error increased
+bike_sharing,minimal,random_forest,r2,0.09665013333746719,,positive values mean temporal R-squared decreased; delta is in score points
+bike_sharing,minimal,ridge,mae,23.652587619976416,31.109890018390242,positive values mean temporal error increased
+bike_sharing,minimal,ridge,rmse,33.005503720349125,32.2424889428589,positive values mean temporal error increased
+bike_sharing,minimal,ridge,r2,0.08106399296389843,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,engineered,dummy_mean,mae,5.477730159592284,0.3155111797263453,positive values mean temporal error increased
+metro_traffic,engineered,dummy_mean,rmse,4.296204301387206,0.21674804931308359,positive values mean temporal error increased
+metro_traffic,engineered,dummy_mean,r2,0.003255370856993197,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,engineered,hist_gradient_boosting,mae,-12.78149210201255,-7.632574651943278,positive values mean temporal error increased
+metro_traffic,engineered,hist_gradient_boosting,rmse,-26.799683043141073,-10.353579694827319,positive values mean temporal error increased
+metro_traffic,engineered,hist_gradient_boosting,r2,-0.0033672257183726684,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,engineered,mlp,mae,193.76009662968184,108.48456682093774,positive values mean temporal error increased
+metro_traffic,engineered,mlp,rmse,-1187.1582371224788,-72.81547599680957,positive values mean temporal error increased
+metro_traffic,engineered,mlp,r2,-1.5793393836450313,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,engineered,random_forest,mae,-7.5088511229132,-5.167731675810669,positive values mean temporal error increased
+metro_traffic,engineered,random_forest,rmse,-20.094887815055216,-8.46505141551666,positive values mean temporal error increased
+metro_traffic,engineered,random_forest,r2,-0.0023432889325447626,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,engineered,ridge,mae,-18.559638494325213,-6.4110035445616065,positive values mean temporal error increased
+metro_traffic,engineered,ridge,rmse,-125.4558485394383,-24.57717518703432,positive values mean temporal error increased
+metro_traffic,engineered,ridge,r2,-0.03291677252525804,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,minimal,dummy_mean,mae,5.477730159592284,0.3155111797263453,positive values mean temporal error increased
+metro_traffic,minimal,dummy_mean,rmse,4.296204301387206,0.21674804931308359,positive values mean temporal error increased
+metro_traffic,minimal,dummy_mean,r2,0.003255370856993197,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,minimal,hist_gradient_boosting,mae,-24.60477700004526,-8.108492225628218,positive values mean temporal error increased
+metro_traffic,minimal,hist_gradient_boosting,rmse,-37.84708321961375,-7.929525910711276,positive values mean temporal error increased
+metro_traffic,minimal,hist_gradient_boosting,r2,-0.008921083431421506,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,minimal,mlp,mae,54.42486530658539,19.181700766393952,positive values mean temporal error increased
+metro_traffic,minimal,mlp,rmse,-2435.182197764799,-83.46750457866942,positive values mean temporal error increased
+metro_traffic,minimal,mlp,r2,-5.170025121027654,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,minimal,random_forest,mae,-11.434137393191861,-4.609565329638776,positive values mean temporal error increased
+metro_traffic,minimal,random_forest,rmse,-34.23617687501343,-7.5580165490596425,positive values mean temporal error increased
+metro_traffic,minimal,random_forest,r2,-0.007702697433569772,,positive values mean temporal R-squared decreased; delta is in score points
+metro_traffic,minimal,ridge,mae,-34.201833459566956,-5.767711932435216,positive values mean temporal error increased
+metro_traffic,minimal,ridge,rmse,-927.0726088623736,-54.70657635864238,positive values mean temporal error increased
+metro_traffic,minimal,ridge,r2,-0.978861573887393,,positive values mean temporal R-squared decreased; delta is in score points
