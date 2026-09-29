@@ -1,0 +1,33 @@
+project: TabularML-RealWorld-Benchmark
+task: one-hour-ahead rolling regression with only prior-hour observed weather and target history
+datasets:
+  - bike_sharing
+  - metro_traffic
+feature_sets:
+  - minimal
+  - engineered
+models:
+  - dummy_mean
+  - ridge
+  - random_forest
+  - hist_gradient_boosting
+  - mlp
+random_seeds: [11, 29, 47]
+random_split: [0.70, 0.15, 0.15]
+temporal_split: [0.70, 0.15, 0.15]
+rolling_origin:
+  validation_windows: [[0.50, 0.60], [0.60, 0.70], [0.70, 0.80]]
+metrics: [mae, rmse, r2]
+model_configuration:
+  random_forest:
+    n_estimators: 120
+    min_samples_leaf: 3
+    max_features: 0.8
+  hist_gradient_boosting:
+    max_iter: 120
+    learning_rate: 0.08
+    max_leaf_nodes: 15
+  mlp:
+    hidden_layer_sizes: [64, 32]
+    max_iter: 200
+    early_stopping: true

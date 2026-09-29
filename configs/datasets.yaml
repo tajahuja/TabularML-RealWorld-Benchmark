@@ -1,0 +1,19 @@
+datasets:
+  bike_sharing:
+    source: https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset
+    download: https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip
+    file: hour.csv
+    target: cnt
+    timestamp: dteday + hr
+    task: hourly one-step-ahead bike demand regression
+    license: CC BY 4.0
+    attribution: Fanaee-T, H. (2013). Bike Sharing Dataset. UCI Machine Learning Repository. doi:10.24432/C5W894.
+  metro_traffic:
+    source: https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume
+    download: https://archive.ics.uci.edu/static/public/492/metro+interstate+traffic+volume.zip
+    file: Metro_Interstate_Traffic_Volume.csv.gz
+    target: traffic_volume
+    timestamp: date_time
+    task: hourly one-step-ahead westbound I-94 traffic volume regression
+    license: CC BY 4.0
+    attribution: Hogue, J. (2019). Metro Interstate Traffic Volume. UCI Machine Learning Repository. doi:10.24432/C5X60B.
